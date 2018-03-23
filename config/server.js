@@ -57,7 +57,6 @@ app.use(expressSession({
 /* efetua o autoload das rotas, dos models e dos controllers para o objeto app */
 consign()
 	.include('app/routes')
-	.include('app/api')
 	.then('config/dbConnection.js')
 	.then('app/models')
 	.then('app/controllers')
